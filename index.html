@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/Logo.png" alt="">
+    </header>
+
+    <main>
+        <section class="caja">
+            <section class="apartado-encriptado">
+                <label for=""></label>
+                <textarea name="" id="texto-encriptado" cols="30" rows="10" placeholder="Ingresa el texto" oninput="this.value = this.value.replace(/[A-ZÁÉÍÓÚÜÑ]/g, '').replace(/[^\w\s]/gi, '')"></textarea>
+
+                <section class="btn-texto">
+                    <input onclick="encriptar();" type="submit" value="Encriptar" class="btn-encriptador">
+                    <input onclick="desencriptar();" type="submit" value="Desencriptar" class="btn-desencriptador">
+                </section>
+            </section>
+
+            <section class="apartado-descriptado">
+                <section class="resultado">
+                    <img src="imagenes/Muñeco.png" alt="Muñeco" class="img-muñeco">
+                    <textarea name="" id="texto-desencriptado" cols="30" rows="10" itemid=""></textarea>
+                    <div id="mensaje-copiado" style="display: none;">¡Texto copiado!</div>
+                    <input onclick="copiar();" type="submit" value="copiar" class="btn-copiar">
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <script src="encriptador.js"></script>
+</body>
+</html>

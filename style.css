@@ -1,0 +1,59 @@
+.caja {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.apartado-encriptado,
+.apartado-descriptado {
+    width: 48%;
+    box-sizing: border-box;
+}
+
+.btn-texto {
+    display: flex;
+    justify-content: space-between;
+}
+
+.apartado-encriptado {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.apartado-descriptado {
+    padding: 20px;
+}
+
+.img-muñeco{
+    width: 50%;
+    padding: 0 5px;
+}
+
+textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    right: none;
+}
+
+input[type="submit"] {
+    margin-right: 10px;
+}
+
+.btn-encriptador{
+    background: rgb(33, 33, 247);
+    border-radius: 10px;
+    width: 30%;
+    color: white;
+}
+
+.btn-desencriptador{
+    background: rgba(rgb(190, 173, 173), rgb(191, 221, 191), rgb(142, 142, 180), 5);
+    border-radius: 10px;
+    width: 30%;
+}
+
+.btn-copiar{
+    border-radius: 10px;
+    width: 30%;
+}
